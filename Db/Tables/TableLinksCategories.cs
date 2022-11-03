@@ -49,8 +49,8 @@ public class TableLinksCategories
 
     public void AddNew(GameCategory gameCategory)
     {
-        string sqlRequest = "";
-            //$"INSERT INTO categories (name, chat_id) VALUES ('{gameCategory.Name}', '{gameCategory.ChatId}');
+        string sqlRequest = 
+            $"INSERT INTO categories (name, chat_id) VALUES ('{gameCategory.Name}', '{gameCategory.ChatId}')";
 
         NpgsqlCommand command = new NpgsqlCommand(sqlRequest, _connection);
 
