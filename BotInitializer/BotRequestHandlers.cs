@@ -1,4 +1,5 @@
-﻿using NLog;
+﻿using Gamer228.TGBOT.Router;
+using NLog;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Types;
@@ -7,13 +8,13 @@ namespace Gamer228.TGBOT.BotInitializer;
 
 public class BotRequestHandlers
 {
-    private static ILogger Logger = LogManager.GetCurrentClassLogger();
-    //private ChatsRouter _chatsRouter;
+   private static ILogger Logger = LogManager.GetCurrentClassLogger();
+    private ChatsRouter _chatsRouter;
 
     public BotRequestHandlers()
     {
         Logger.Info("Старт инициализации ChatsRouter");
-        //_chatsRouter = new ChatsRouter();
+        _chatsRouter = new ChatsRouter();
         Logger.Info("Выволнена инициализация ChatsRouter");
     }
 
@@ -36,7 +37,7 @@ public class BotRequestHandlers
                     canRoute = true;
                     chatId = update.Message.Chat.Id;
                     messageId = update.Message.MessageId;
-                    //textData = update.Message.Text;
+                   // textData = update.Message.Text;
                     Logger.Debug($"Тип входящего сообщения от chatId = {chatId} - UpdateType.Message");
                 }
 
@@ -57,13 +58,14 @@ public class BotRequestHandlers
 
         if (canRoute)
         {
-            /*try
+            try
             {
-               // BotTextMessage botTextMessage = _chatsRouter.Route(chatId, textData);
-                
+                BotTextMessage botTextMessage = null;
+                    //await Task.Run(() => _chatsRouter.Route(chatId, textData), cancellationToken);
+
                 await botClient.SendTextMessageAsync(
                     chatId: chatId,
-                    //text: botTextMessage.Text,
+                    text: botTextMessage.Text,
                     replyMarkup: botTextMessage.InlineKeyboardMarkup,
                     cancellationToken: cancellationToken);
             }
@@ -73,7 +75,7 @@ public class BotRequestHandlers
                     chatId: chatId,
                     messageId: messageId,
                     cancellationToken: cancellationToken);
-            }*/
+            }
         }
 
         Logger.Info($"Выполенна обработка входящего сообщения от chatId = {chatId} в методе HandleUpdateAsync");
