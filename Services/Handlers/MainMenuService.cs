@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using Gamer228.TGBOT.BotInitializer;
 using Gamer228.TGBOT.Router;
+using Gamer228.TGBOT.Util;
 using Microsoft.VisualBasic;
 using NLog;
 
@@ -8,27 +9,27 @@ namespace Gamer228.TGBOT.Services.Handlers;
 
 public class MainMenuService
 {
-    private static ILogger Logger = LogManager.GetCurrentClassLogger();
-
     public BotTextMessage ProcessCommandStart(string command, TransmittedData transmittedData)
     {
-        return null;
+        if (command == SystemStringsStorage.CommandStart)
+        {
+            transmittedData.State = State.ClickInMainMenu;
+            return new BotTextMessage("Добро пожаловать");
+        }
+        else
+        {
+            return new BotTextMessage("Введена неверная команда, для запуска бота нажмите /start");
+        }
+    }
+
+    public BotTextMessage ProcessClickInMainMenu(string textData, TransmittedData transmittedData)
+    {
+        if (textData == "ok")
+        {
+            return new BotTextMessage("OK OK OK OK OK OK");
+        }
+        return new BotTextMessage("неизвестное действие в главном меню");
+        //throw new Exception("Нет обработки");
     }
     
-     public BotTextMessage ProcessClickOnInlineButtonInMenuMain(string callBackData, TransmittedData transmittedData)
-     {
-         return null;
-     }
-     
-     public BotTextMessage ProcessClickOnInlineButtonInMenuAdd(string callBackData,
-        TransmittedData transmittedData)
-     {
-         return null;
-     }
-     
-     public BotTextMessage ProcessClickOnInlineButtonInMenuDelete(string callBackData,
-         TransmittedData transmittedData)
-     {
-         return null;
-     }
 }
