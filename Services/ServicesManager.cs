@@ -12,27 +12,24 @@ public class ServicesManager
     private static ILogger Logger = LogManager.GetCurrentClassLogger();
 
     private Dictionary<State, Func<string, TransmittedData, BotTextMessage>>
-        _stateServiceMethodPairs;
+        _methods;
 
     private MainMenuService _mainMenuService;
-    private LinksService _linksService;
-    private CategoriesService _categoriesService;
 
     public ServicesManager()
     {
         _mainMenuService = new MainMenuService();
-        _linksService = new LinksService();
-        _categoriesService = new CategoriesService();
 
-        _stateServiceMethodPairs =
+        _methods =
             new Dictionary<State, Func<string, TransmittedData, BotTextMessage>>();
 
-        _stateServiceMethodPairs[State.WaitingCommandStart] = _mainMenuService.ProcessCommandStart;
+        _methods[State.CommandStart] = _mainMenuService.ProcessCommandStart;
+        _methods[State.ClickInMainMenu] = _mainMenuService.ProcessClickInMainMenu;
     }
 
     public BotTextMessage ProcessBotUpdate(string textData, TransmittedData transmittedData)
     {
-        var serviceMethod = _stateServiceMethodPairs[transmittedData.State];
+        var serviceMethod = _methods[transmittedData.State];
 
         return serviceMethod.Invoke(textData, transmittedData);
     }

@@ -73,7 +73,7 @@ public class InlineKeyboardsMarkupStorage
         }
     });
 
-    public static InlineKeyboardMarkup CreateInlineKeyboardMarkupMenuLinkCategoryForAdd(
+    /*public static InlineKeyboardMarkup CreateInlineKeyboardMarkupMenuLinkCategoryForAdd(
         IEnumerable<LinkCategory> linkCategories)
     {
         List<List<InlineKeyboardButton>> keyboardMarkup = new List<List<InlineKeyboardButton>>();
@@ -232,7 +232,8 @@ public class InlineKeyboardsMarkupStorage
         });
 
         return new InlineKeyboardMarkup(keyboardMarkup);
-    }
+    }*/
+    
     
 }
 
