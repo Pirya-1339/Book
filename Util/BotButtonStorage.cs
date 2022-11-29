@@ -3,15 +3,11 @@ namespace Gamer228.TGBOT.Util;
 public class BotButtonStorage
 {
     #region ButtonsInMenuMain
-    public static BotButton ButtonBrowseInMenuMain { get; } = new BotButton("Просмотреть игру", "ButtonBrowseInMenuMain");
+    public static BotButton ButtonBrowseInMenuMain { get; } = new BotButton("Просмотреть игру", "ButtonBrowseInMenuMain");  
     public static BotButton ButtonAddCategoryInMenuMain { get; } = new BotButton("Добавить свою категорию", "ButtonAddCategoryInMenuMain");
-    #endregion
-
-    #region ButtonBrowseInMenuMain
-
-    public static BotButton ButtonBackInMainMenu { get; } = new BotButton("Назад", "ButtonBackInMainMenu");
-    #endregion
+  
     
+    #endregion
     #region ButtonCategoryInMenuMain
     public static BotButton ButtonActionInMenuAdd { get; } = new BotButton("Action", "ButtonActionInMenuAdd");
     public static BotButton ButtonMMORPGInMenuAdd { get; } = new BotButton("MMORPG", "ButtonMMORPGInMenuAdd");
@@ -23,6 +19,11 @@ public class BotButtonStorage
     public static BotButton ButtonStrategiesInMenuAdd { get; } = new BotButton("Стратегии", "ButtonStrategiesInMenuAdd");
     public static BotButton ButtonFighting_gamesInMenuAdd { get; } = new BotButton("Файтинг", "ButtonFighting_gamesInMenuAdd");
     public static BotButton ButtonBackInMenuAdd { get; } = new BotButton("Назад", "ButtonBackwardInMenuAdd");
+    #endregion
+    
+    #region ButtonBrowseInMenuMain
+
+    public static BotButton ButtonBackInMainMenu { get; } = new BotButton("Назад", "ButtonBackInMainMenu");
     #endregion
     
     #region ButtonActionInMenuAdd

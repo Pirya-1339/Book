@@ -25,6 +25,7 @@ public class ServicesManager
 
         _methods[State.CommandStart] = _mainMenuService.ProcessCommandStart;
         _methods[State.ClickInMainMenu] = _mainMenuService.ProcessClickInMainMenu;
+        //_methods[State.ClickCategori] = _mainMenuService.ProcessClickCategori;
     }
 
     public BotTextMessage ProcessBotUpdate(string textData, TransmittedData transmittedData)
