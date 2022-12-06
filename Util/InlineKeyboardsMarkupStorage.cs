@@ -8,19 +8,19 @@ public class InlineKeyboardsMarkupStorage
     { 
         new[]
              {
-                 InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonBrowseInMenuMain.Name,
-                     BotButtonStorage.ButtonBrowseInMenuMain.CallBackData),
+                 InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonShowInMenuMain.Name,
+                     BotButtonStorage.ButtonShowInMenuMain.CallBackData),
              },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonAddCategoryInMenuMain.Name,
-                BotButtonStorage.ButtonAddCategoryInMenuMain.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonAddGameInMenuMain.Name,
+                BotButtonStorage.ButtonAddGameInMenuMain.CallBackData),
         }
        
 
     });
 
-    public static InlineKeyboardMarkup InlineKeyboardMarkupMenuAdd = new(new[]
+    public static InlineKeyboardMarkup MenuChooseCategoryForShow = new(new[]
     {
         new[]
         {
@@ -39,8 +39,8 @@ public class InlineKeyboardsMarkupStorage
         },
         new[]
         {
-        InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonArkInMenuAdd.Name,
-        BotButtonStorage.ButtonArkInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonArkInMenuAdd.Name,
+            BotButtonStorage.ButtonArkInMenuAdd.CallBackData),
         },
         new[]
         {

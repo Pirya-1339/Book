@@ -2,11 +2,7 @@
 
 public enum State
 {
-    ClickCategori,
     CommandStart,
     ClickInMainMenu,
-    WaitingClickButtonCategoryInMenuMain,
-    WaitingButtonBrowseInMenuMain
-   
-    
+    ClickInMenuChooseCategoryForShow
 }

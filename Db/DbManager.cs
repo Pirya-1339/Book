@@ -6,15 +6,15 @@ namespace Gamer228.TGBOT.Db;
 
 public class DbManager
 {
-    public TableLinks TableLinks { get; private set; }
-    public TableLinksCategories TableLinksCategories { get; private set; }
+    public TableGames TableGames { get; private set; }
+    public TableGamesCategories TableGamesCategories { get; private set; }
 
     public DbManager()
     {
         NpgsqlConnection connection = DbConnector.GetInstance().Connection;
 
-        TableLinks = new TableLinks(connection);
-        TableLinksCategories = new TableLinksCategories(connection);
+        TableGames = new TableGames(connection);
+        TableGamesCategories = new TableGamesCategories(connection);
     }
 
     private static DbManager _dbManager = null;

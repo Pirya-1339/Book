@@ -3,11 +3,11 @@ using Npgsql;
 
 namespace Gamer228.TGBOT.Db.Tables;
 
-public class TableLinks
+public class TableGames
 {
     private NpgsqlConnection _connection;
 
-    public TableLinks(NpgsqlConnection connection)
+    public TableGames(NpgsqlConnection connection)
     {
         _connection = connection;
     }
@@ -21,7 +21,7 @@ public class TableLinks
         command.ExecuteNonQuery();
     }
 
-    public IEnumerable<Game> GetAllByCategoryId(int findCategoryId)
+    public List<Game> GetAllByCategoryId(int findCategoryId)
     {
         string sqlRequest = $"SELECT * FROM games WHERE category_id=0 ORDER BY id ASC";
         NpgsqlCommand command = new NpgsqlCommand(sqlRequest, _connection);
