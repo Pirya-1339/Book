@@ -5,17 +5,18 @@ namespace Gamer228.TGBOT.Util;
 public class InlineKeyboardsMarkupStorage
 {
      public static InlineKeyboardMarkup InlineKeyboardMarkupMenuMain = new(new[]
-    {
+    { 
+        new[]
+             {
+                 InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonBrowseInMenuMain.Name,
+                     BotButtonStorage.ButtonBrowseInMenuMain.CallBackData),
+             },
         new[]
         {
             InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonAddCategoryInMenuMain.Name,
                 BotButtonStorage.ButtonAddCategoryInMenuMain.CallBackData),
-        },
-        new[]
-        {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonBrowseInMenuMain.Name,
-                BotButtonStorage.ButtonBrowseInMenuMain.CallBackData),
-        },
+        }
+       
 
     });
 
@@ -73,6 +74,144 @@ public class InlineKeyboardsMarkupStorage
         }
     });
 
+    public static InlineKeyboardMarkup InlineKeyboardMarkupAction = new(new[]
+    { 
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+       
+
+    });
+
+    public static InlineKeyboardMarkup InlineKeyboardMarkupMMORPG = new(new[]
+    {
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+
+
+    });
+    
+    public static InlineKeyboardMarkup InlineKeyboardMarkupGolova = new(new[]
+    {
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+
+
+    });
+    
+    public static InlineKeyboardMarkup InlineKeyboardMarkupArk = new(new[]
+    {
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+
+
+    });
+    public static InlineKeyboardMarkup InlineKeyboardMarkupGonki = new(new[]
+    {
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+
+
+    });
+    public static InlineKeyboardMarkup InlineKeyboardMarkupAdventures = new(new[]
+    {
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+
+
+    });
+   public static InlineKeyboardMarkup InlineKeyboardMarkupSimulators = new(new[]
+    {
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+                 BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+                BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+        }
+
+
+    });
+   public static InlineKeyboardMarkup InlineKeyboardMarkupStrategie = new(new[]
+   {
+       new[]
+       {
+           InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+               BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+       },
+       new[]
+       {
+           InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+               BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+       }
+
+
+   });
+   public static InlineKeyboardMarkup InlineKeyboardMarkupFighting_games = new(new[]
+   {
+       new[]
+       {
+           InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainPrevious.Name,
+               BotButtonStorage.ButtonInMenuMainPrevious.CallBackData)
+       },
+       new[]
+       {
+           InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonInMenuMainNext.Name,
+               BotButtonStorage.ButtonInMenuMainNext.CallBackData),
+       }
+
+
+   });
     /*public static InlineKeyboardMarkup CreateInlineKeyboardMarkupMenuLinkCategoryForAdd(
         IEnumerable<LinkCategory> linkCategories)
     {
@@ -233,8 +372,8 @@ public class InlineKeyboardsMarkupStorage
 
         return new InlineKeyboardMarkup(keyboardMarkup);
     }*/
-    
-    
+
+
 }
 
 

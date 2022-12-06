@@ -1,5 +1,7 @@
 ﻿using System.Text;
 using Gamer228.TGBOT.BotInitializer;
+using Gamer228.TGBOT.Db;
+using Gamer228.TGBOT.Db.Tables;
 using Gamer228.TGBOT.Router;
 using Gamer228.TGBOT.Util;
 using Microsoft.VisualBasic;
@@ -9,12 +11,16 @@ namespace Gamer228.TGBOT.Services.Handlers;
 
 public class MainMenuService
 {
+    private static ILogger Logger = LogManager.GetCurrentClassLogger();
     public BotTextMessage ProcessCommandStart(string command, TransmittedData transmittedData)
     {
         if (command == SystemStringsStorage.CommandStart)
         {
             transmittedData.State = State.ClickInMainMenu;
-            return new BotTextMessage("Добро пожаловать");
+            return new BotTextMessage(
+                DialogsStringsStorage.MenuMain,
+                InlineKeyboardsMarkupStorage.InlineKeyboardMarkupMenuMain
+            );
         }
         else
         {
@@ -22,14 +28,29 @@ public class MainMenuService
         }
     }
 
-    public BotTextMessage ProcessClickInMainMenu(string textData, TransmittedData transmittedData)
+    public BotTextMessage ProcessClickInMainMenu(string callBackData, TransmittedData transmittedData)
     {
-        if (textData == "ok")
+        if (callBackData == BotButtonStorage.ButtonBrowseInMenuMain.CallBackData)
         {
-            return new BotTextMessage("OK OK OK OK OK OK");
+            transmittedData.State = State.WaitingButtonBrowseInMenuMain ;
+
+            return new BotTextMessage(
+                DialogsStringsStorage.MenuCategory,
+                InlineKeyboardsMarkupStorage.InlineKeyboardMarkupMenuAdd
+            );
         }
-        return new BotTextMessage("неизвестное действие в главном меню");
-        //throw new Exception("Нет обработки");
+        
+        throw new Exception("Bad user request");
     }
+
+    /*public BotTextMessage ProcessClickCategori(string callBackData, TransmittedData transmittedData)
+    {
+        if (callBackData == BotButtonStorage.ButtonActionInMenuAdd.CallBackData)
+        {
+            
+        }
+    }*/
+
+    
     
 }
