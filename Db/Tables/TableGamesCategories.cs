@@ -3,11 +3,11 @@ using Npgsql;
 
 namespace Gamer228.TGBOT.Db.Tables;
 
-public class TableLinksCategories
+public class TableGamesCategories
 {
      private NpgsqlConnection _connection;
 
-    public TableLinksCategories(NpgsqlConnection connection)
+    public TableGamesCategories(NpgsqlConnection connection)
     {
         _connection = connection;
     }
@@ -50,7 +50,7 @@ public class TableLinksCategories
     public void AddNew(GameCategory gameCategory)
     {
         string sqlRequest = 
-            $"INSERT INTO categories (name, chat_id) VALUES ('{gameCategory.Name}', '{gameCategory.ChatId}')";
+            $"INSERT INTO categories (name) VALUES ('{gameCategory.Name}')";
 
         NpgsqlCommand command = new NpgsqlCommand(sqlRequest, _connection);
 

@@ -3,8 +3,8 @@ namespace Gamer228.TGBOT.Util;
 public class BotButtonStorage
 {
     #region ButtonsInMenuMain
-    public static BotButton ButtonBrowseInMenuMain { get; } = new BotButton("Просмотреть игру", "ButtonBrowseInMenuMain");  
-    public static BotButton ButtonAddCategoryInMenuMain { get; } = new BotButton("Добавить свою категорию", "ButtonAddCategoryInMenuMain");
+    public static BotButton ButtonShowInMenuMain { get; } = new BotButton("Просмотреть игру", "ButtonShowInMenuMain");  
+    public static BotButton ButtonAddGameInMenuMain { get; } = new BotButton("Добавить свою игру", "ButtonAddGameInMenuMain");
   
     
     #endregion
