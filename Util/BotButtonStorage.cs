@@ -3,21 +3,29 @@ namespace Gamer228.TGBOT.Util;
 public class BotButtonStorage
 {
     #region ButtonsInMenuMain
-    public static BotButton ButtonShowInMenuMain { get; } = new BotButton("Просмотреть игру", "ButtonShowInMenuMain");  
-    public static BotButton ButtonAddGameInMenuMain { get; } = new BotButton("Добавить свою игру", "ButtonAddGameInMenuMain");
-  
-    
+
+    public static BotButton ButtonShowInMenuMain { get; } = new BotButton("Выбрать учебник", "ButtonShowInMenuMain");
+
+
     #endregion
     #region ButtonCategoryInMenuMain
-    public static BotButton ButtonActionInMenuAdd { get; } = new BotButton("Action", "ButtonActionInMenuAdd");
-    public static BotButton ButtonMMORPGInMenuAdd { get; } = new BotButton("MMORPG", "ButtonMMORPGInMenuAdd");
-    public static BotButton ButtonGolovaInMenuAdd { get; } = new BotButton("Головоломки", "ButtonGolovaInMenuAdd");
-    public static BotButton ButtonArkInMenuAdd { get; } = new BotButton("Аркады", "ButtonArkInMenuAdd");
-    public static BotButton ButtonGonkiInMenuAdd { get; } = new BotButton("Гонки", "ButtonGonkiInMenuAdd");
-    public static BotButton ButtonAdventuresInMenuAdd { get; } = new BotButton("Приключения", "ButtonAdventuresInMenuAdd");
-    public static BotButton ButtonSimulatorsInMenuAdd { get; } = new BotButton("Симуляторы", "ButtonSimulatorsInMenuAdd");
-    public static BotButton ButtonStrategiesInMenuAdd { get; } = new BotButton("Стратегии", "ButtonStrategiesInMenuAdd");
-    public static BotButton ButtonFighting_gamesInMenuAdd { get; } = new BotButton("Файтинг", "ButtonFighting_gamesInMenuAdd");
+    public static BotButton ButtonMaths { get; } = new BotButton("Математика", "ButtonMaths");
+    public static BotButton ButtonEnglish { get; } = new BotButton("Английский язык", "ButtonEnglish");
+    public static BotButton ButtonRussian { get; } = new BotButton("Русский язык", "ButtonRussian");
+    public static BotButton ButtonLiterature { get; } = new BotButton("Литература", "ButtonLiterature");
+    public static BotButton ButtonGeography { get; } = new BotButton("География", "ButtonGeography");
+    public static BotButton ButtonHistory { get; } = new BotButton("История", "ButtonHistory");
+    public static BotButton ButtonScience { get; } = new BotButton("Естестознание", "ButtonScience");
+    public static BotButton ButtonArt { get; } = new BotButton("ИЗО", "ButtonArt");
+    public static BotButton ButtonMusic { get; } = new BotButton("Музыка", "ButtonMusic");
+    public static BotButton ButtonPhysics { get; } = new BotButton("Физика", "ButtonPhysics");
+    public static BotButton ButtonChemistry { get; } = new BotButton("Химия", "ButtonChemistry");
+    public static BotButton ButtonBiology { get; } = new BotButton("Биология", "ButtonBiology");
+    public static BotButton ButtonTechnology { get; } = new BotButton("Труды", "ButtonTechnology");
+    public static BotButton ButtonPe { get; } = new BotButton("Физ-ра", "ButtonPe");
+    public static BotButton ButtonComputing { get; } = new BotButton("ИКТ", "ButtonComputing");
+    public static BotButton ButtonOBZH { get; } = new BotButton("ОБЖ", "ButtonOBZH");
+    public static BotButton ButtonSocial_Studies { get; } = new BotButton("Обществознание", "ButtonSocial_Studies");
     public static BotButton ButtonBackInMenuAdd { get; } = new BotButton("Назад", "ButtonBackwardInMenuAdd");
     #endregion
     

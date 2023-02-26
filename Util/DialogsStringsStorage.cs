@@ -5,7 +5,7 @@ public class DialogsStringsStorage
     public const string CommandStartInputErrorInput =
         "Команда не распознана. Для начала работы с ботом введите /start";
 
-    public const string MenuMain = "Доброго времени друзья\nВы в главном меню\nВыберите действие";
+    public const string MenuMain = "Доброго времени друг\nТы в главном меню.";
     public const string MenuCategoryForShow = "Выберите категорию";
     public const string LinkInputUrl = "Введите URL";
 

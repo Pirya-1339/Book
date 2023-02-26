@@ -16,7 +16,7 @@ public class Bot
     {
         Logger.Info("Старт инициализации TelegramBotClient");
 
-        _botClient = new TelegramBotClient("5590682915:AAGnCPlZt960WR81wojGMFLrTYMLAWy3mCg");
+        _botClient = new TelegramBotClient("6290945131:AAFegVFSTgEAlWH6jgoXq9pDNkHt2K60DJQ");
         _cancellationTokenSource = new CancellationTokenSource();
 
         Logger.Info("Выполнена инициализация TelegramBotClient с токеном 5590682915:AAGnCPlZt960WR81wojGMFLrTYMLAWy3mCg");

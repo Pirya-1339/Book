@@ -11,67 +11,100 @@ public class InlineKeyboardsMarkupStorage
                  InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonShowInMenuMain.Name,
                      BotButtonStorage.ButtonShowInMenuMain.CallBackData),
              },
-        new[]
-        {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonAddGameInMenuMain.Name,
-                BotButtonStorage.ButtonAddGameInMenuMain.CallBackData),
-        }
-       
-
     });
 
     public static InlineKeyboardMarkup MenuChooseCategoryForShow = new(new[]
     {
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonActionInMenuAdd.Name,
-                BotButtonStorage.ButtonActionInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonMaths.Name,
+                BotButtonStorage.ButtonMaths.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonMMORPGInMenuAdd.Name,
-                BotButtonStorage.ButtonMMORPGInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonEnglish.Name,
+                BotButtonStorage.ButtonEnglish.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonGolovaInMenuAdd.Name,
-                BotButtonStorage.ButtonGolovaInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonRussian.Name,
+                BotButtonStorage.ButtonRussian.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonArkInMenuAdd.Name,
-            BotButtonStorage.ButtonArkInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonLiterature.Name,
+                BotButtonStorage.ButtonLiterature.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonGonkiInMenuAdd.Name,
-                BotButtonStorage.ButtonGonkiInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonGeography.Name,
+                BotButtonStorage.ButtonGeography.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonAdventuresInMenuAdd.Name,
-                BotButtonStorage.ButtonAdventuresInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonHistory.Name,
+                BotButtonStorage.ButtonHistory.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonSimulatorsInMenuAdd.Name,
-                BotButtonStorage.ButtonSimulatorsInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonScience.Name,
+                BotButtonStorage.ButtonScience.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonStrategiesInMenuAdd.Name,
-                BotButtonStorage.ButtonStrategiesInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonArt.Name,
+                BotButtonStorage.ButtonArt.CallBackData),
         },
         new[]
         {
-            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonFighting_gamesInMenuAdd.Name,
-                BotButtonStorage.ButtonFighting_gamesInMenuAdd.CallBackData),
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonMusic.Name,
+                BotButtonStorage.ButtonMusic.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonPhysics.Name,
+                BotButtonStorage.ButtonPhysics.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonChemistry.Name,
+                BotButtonStorage.ButtonChemistry.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonBiology.Name,
+                BotButtonStorage.ButtonBiology.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonTechnology.Name,
+                BotButtonStorage.ButtonTechnology.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonPe.Name,
+                BotButtonStorage.ButtonPe.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonComputing.Name,
+                BotButtonStorage.ButtonComputing.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonOBZH.Name,
+                BotButtonStorage.ButtonOBZH.CallBackData),
+        },
+        new[]
+        {
+            InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonSocial_Studies.Name,
+                BotButtonStorage.ButtonSocial_Studies.CallBackData),
         },
         new[]
         {
             InlineKeyboardButton.WithCallbackData(BotButtonStorage.ButtonBackInMenuAdd.Name,
                 BotButtonStorage.ButtonBackInMenuAdd.CallBackData),
-        }
+        },
     });
 
     public static InlineKeyboardMarkup InlineKeyboardMarkupAction = new(new[]

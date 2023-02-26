@@ -45,13 +45,13 @@ public class MainMenuService
 
     public BotTextMessage ProcessClickInMenuChooseCategoryForShow(string callBackData, TransmittedData transmittedData)
     {
-        if (callBackData == BotButtonStorage.ButtonActionInMenuAdd.CallBackData)
+        if (callBackData == BotButtonStorage.ButtonMaths.CallBackData)
         {
             //List<Game> games = DbManager.GetInstance().TableGames.GetAllByCategoryId(1);
             //TODO преобразовать List<Game> games в строку для вывода
             return new BotTextMessage("press ButtonActionInMenuAdd");
         }
-        else if (callBackData == BotButtonStorage.ButtonMMORPGInMenuAdd.CallBackData)
+        else if (callBackData == BotButtonStorage.ButtonEnglish.CallBackData)
         {
             return new BotTextMessage("press ButtonMMORPGInMenuAdd");
         }
